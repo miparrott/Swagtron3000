@@ -27,6 +27,12 @@ Goals_t goal;
 
 /* Sensors */
 
+/************** Action Flags (for history purposes) *********/
+
+boolean beaconAActivated;
+boolean beaconBActivated;
+boolean gateActivated
+
 
 void setup() {
   /* Timer Setup */
@@ -62,6 +68,27 @@ void checkGlobalEvents(){
   if (TestLineSensors()) RespLineSensors();  // here, knowing direction and current goal, can change goal
   if (TestBeaconSensors()) RespBeaconSensors();  //here knowing goal, can determine when to change goal
   if (TestLimitSwitch()) RespLimitSwitch();
+}
+
+
+int TestLineSensors() {
+  return null;
+}
+
+void RespLineSensors(){
+  
+}
+
+int TestBeaconSensors() {
+  return null;
+}
+
+void RespBeaconSensors(){
+  
+}
+
+int TestLimitSwitch() {
+  return null;
 }
 
 /****************************** setMotorStates and Helpers **********************/
